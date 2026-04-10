@@ -4,7 +4,7 @@ FROM golang:1.22 AS builder
 WORKDIR /app
 
 # Cache dependencies
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod download
 
 # Copy source
