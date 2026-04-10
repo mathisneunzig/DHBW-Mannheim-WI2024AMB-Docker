@@ -1,0 +1,25 @@
+services:
+
+  js-calculator:
+    build:
+      context: apis/js
+    container_name: js-calculator
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  python-calculator:
+    build:
+      context: apis/python
+    container_name: python-calculator
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
+
+  go-calculator:
+    build:
+      context: apis/go
+    container_name: go-calculator
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
