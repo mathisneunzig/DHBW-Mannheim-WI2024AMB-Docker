@@ -1,4 +1,4 @@
-name: Docker CI (Changed Files Only)
+name: CI - Dockerfiles setup correctly
 
 on:
   pull_request:
