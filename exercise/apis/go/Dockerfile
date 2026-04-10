@@ -6,6 +6,7 @@ WORKDIR /app
 # Cache dependencies
 COPY go.mod ./
 RUN go mod download
+RUN go get api
 
 # Copy source
 COPY . .
