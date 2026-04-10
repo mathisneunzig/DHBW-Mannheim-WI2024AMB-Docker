@@ -6,7 +6,7 @@ services:
       context: ./apis/go
       dockerfile: Dockerfile
     ports:
-      - "8090:8090"
+      - "8090:5000"
     container_name: go-calculator
 
   js-api:
