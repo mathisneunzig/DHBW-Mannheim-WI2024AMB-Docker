@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  js:
+    build:
+      context: ./apis/js
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+  python:
+    build:
+      context: ./apis/python
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+
+  go:
+    build:
+      context: ./apis/go
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3002"
