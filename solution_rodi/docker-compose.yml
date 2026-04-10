@@ -1,0 +1,15 @@
+services:
+  go:
+    build: ./apis/go
+    ports:
+      - "5001:5000"
+
+  js:
+    build: ./apis/js
+    ports:
+      - "3000:3000"
+
+  python:
+    build: ./apis/python
+    ports:
+      - "4000:4000"
