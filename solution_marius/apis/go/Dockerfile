@@ -2,6 +2,8 @@ FROM golang:latest AS builder
 
 WORKDIR /app
 
+RUN go mod init calculator
+
 COPY go.mod go.sum ./
 RUN go mod download
 
@@ -18,4 +20,3 @@ EXPOSE 8090
 USER nonroot:nonroot
 
 CMD ["/go-api"]
-
