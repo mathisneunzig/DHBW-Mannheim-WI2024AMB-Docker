@@ -2,7 +2,7 @@ services:
 
   js-calculator:
     build:
-      context: js
+      context: apis_penryhatric/js
     container_name: js-calculator
     ports:
       - "3000:3000"
@@ -10,7 +10,7 @@ services:
 
   python-calculator:
     build:
-      context: python
+      context: apis_penryhatric/python
     container_name: python-calculator
     ports:
       - "4000:4000"
@@ -18,7 +18,7 @@ services:
 
   go-calculator:
     build:
-      context: go
+      context: apis_penryhatric/go
     container_name: go-calculator
     ports:
       - "5000:5000"
