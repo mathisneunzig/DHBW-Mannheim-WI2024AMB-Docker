@@ -9,6 +9,10 @@ app.get('/add/:a/:b', (req, res) => {
   const [a, b] = parse(req.params.a, req.params.b);
   res.json({ calculation: `${a}+${b}`, result: a + b });
 });
+app.get('/add3/:a/:b', (req, res) => {
+  const [a, b] = parse(req.params.a, req.params.b);
+  res.json({ calculation: `${a}+${b}`, result: a + b });
+});
 
 // Subtract
 app.get('/substract/:a/:b', (req, res) => {
